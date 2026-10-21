@@ -96,7 +96,7 @@ export default function Home() {
         {/* Proyectos */}
         <section id="proyectos" className="scroll-mt-20 py-16">
           <SectionTitle>Proyectos</SectionTitle>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2">
             {projects.map((project) => (
               <article
                 key={project.title}
