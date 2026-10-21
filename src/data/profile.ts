@@ -8,7 +8,7 @@ export const profile = {
   about: [
     "Soy desarrollador Full Stack de Mejillones, Chile. Construyo aplicaciones web completas para resolver problemas de operación reales: desde el modelo de datos hasta la interfaz.",
     "Trabajo principalmente con Python y Django, y desarrollo frontends con Tailwind CSS, React y Next.js.",
-    "He creado un sistema de gestión para faenas mineras, una app para emitir boletas de servicios desde el celular y la plataforma de arriendo y socios del Club Deportivo Manuel Prado, que hoy está en producción.",
+    "Mi proyecto más reciente es Cuentas Claras, una app de gastos del hogar con un frontend en Next.js que consume una API en Django, hoy en producción. También he creado un sistema de gestión para faenas mineras, una app para emitir boletas de servicios desde el celular y la plataforma de arriendo y socios del Club Deportivo Manuel Prado, que también está en producción.",
   ],
   // Coloca tu foto en /public y pon aquí su ruta. Con null se muestran tus iniciales.
   photo: "/foto.jpg" as string | null,
@@ -28,6 +28,18 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    title: "Cuentas Claras",
+    status: "En producción",
+    description:
+      "Registro de gastos del hogar con arquitectura desacoplada: frontend en Next.js que consume una API REST en Django Ninja, con contrato OpenAPI tipado de punta a punta. Sesión en cookie HttpOnly con CSRF, paginación y filtros en el servidor, errores de Django mapeados bajo cada input y eliminación optimista. Demo en línea con cuenta de prueba.",
+    tags: ["Next.js", "TypeScript", "Django Ninja", "TanStack Query"],
+    links: [
+      { label: "Probar demo", href: "https://cuentasclaras.3rlabs.cl" },
+      { label: "API docs", href: "https://api-cuentasclaras.3rlabs.cl/api/docs" },
+      { label: "Repositorio", href: "https://github.com/y-jeff/Cuentas-Claras" },
+    ],
+  },
   {
     title: "Mineral Manager",
     status: "Open Source",
