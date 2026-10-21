@@ -32,9 +32,12 @@ export const projects: Project[] = [
     title: "Mineral Manager",
     status: "Open Source",
     description:
-      "Sistema web para la gestión operativa de una faena minera: trabajadores y certificaciones con alertas de vencimiento, maquinaria, bodega y pañol. Incluye carga masiva desde Excel, informes PDF y pruebas en GitHub Actions.",
+      "Sistema web para la gestión operativa de una faena minera: trabajadores y certificaciones con alertas de vencimiento, maquinaria, bodega y pañol. Incluye carga masiva desde Excel, informes PDF y pruebas en GitHub Actions. Demo en línea con cuenta de prueba.",
     tags: ["Python", "Django", "Bootstrap", "Chart.js"],
-    links: [{ label: "Repositorio", href: "https://github.com/y-jeff/Mineral_Manager" }],
+    links: [
+      { label: "Probar demo", href: "https://jeff017.pythonanywhere.com" },
+      { label: "Repositorio", href: "https://github.com/y-jeff/Mineral_Manager" },
+    ],
   },
   {
     title: "Sede Manuel Prado",
