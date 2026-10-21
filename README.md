@@ -45,6 +45,25 @@ Abre http://localhost:3000.
 | `npm run start` | Sirve el build de producción |
 | `npm run lint` | Revisa el código con ESLint |
 
+## Ramas y despliegue
+
+| Rama | Uso | Despliegue en Vercel |
+|---|---|---|
+| `main` | Producción: lo que ve todo el mundo | Sitio principal |
+| `develop` | Pruebas: aquí se trabaja | Preview con URL propia |
+
+Flujo de trabajo:
+
+1. Trabajar en `develop` y hacer push. Vercel genera un preview para revisarlo.
+2. Cuando el preview esté bien, abrir un Pull Request `develop → main` en GitHub y hacer merge.
+3. Vercel despliega `main` a producción automáticamente.
+
+```bash
+git checkout develop        # trabajar siempre aquí
+git add . && git commit -m "..."
+git push                    # preview en Vercel
+```
+
 ## Estructura
 
 ```
