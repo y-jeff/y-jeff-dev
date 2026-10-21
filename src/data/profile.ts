@@ -22,6 +22,7 @@ export const profile = {
 export type Project = {
   title: string;
   description: string;
+  status: "Open Source" | "En producción";
   tags: string[];
   links: { label: string; href: string }[];
 };
@@ -29,6 +30,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "Mineral Manager",
+    status: "Open Source",
     description:
       "Sistema web para la gestión operativa de una faena minera: trabajadores y certificaciones con alertas de vencimiento, maquinaria, bodega y pañol. Incluye carga masiva desde Excel, informes PDF y pruebas en GitHub Actions.",
     tags: ["Python", "Django", "Bootstrap", "Chart.js"],
@@ -36,16 +38,18 @@ export const projects: Project[] = [
   },
   {
     title: "Sede Manuel Prado",
+    status: "En producción",
     description:
-      "Plataforma en producción del Club Deportivo Manuel Prado: reserva de la sede en línea con calendario de disponibilidad, gestión de socios y cuotas, y panel de administración con solicitudes y ganancias.",
+      "Plataforma en producción del Club Deportivo Manuel Prado: reserva de la sede en línea con calendario de disponibilidad, gestión de socios y cuotas, y panel de administración con solicitudes y ganancias. El repositorio público es una versión demo con datos ficticios.",
     tags: ["Django", "Tailwind CSS", "Alpine.js"],
     links: [
       { label: "Ver sitio", href: "https://sedemanuelprado.cl" },
-      { label: "Repositorio", href: "https://github.com/y-jeff/clubmanuelprado" },
+      { label: "Código demo", href: "https://github.com/y-jeff/clubmanuelprado" },
     ],
   },
   {
     title: "EmiteBoleta",
+    status: "Open Source",
     description:
       "App web mobile-first para que trabajadores independientes en Chile emitan comprobantes de servicios en PDF desde el celular: numeración correlativa, validación de RUT, historial, dashboard mensual y envío por WhatsApp.",
     tags: ["Django", "PostgreSQL", "ReportLab", "Tailwind CSS"],
@@ -53,6 +57,7 @@ export const projects: Project[] = [
   },
   {
     title: "Este portfolio",
+    status: "Open Source",
     description:
       "Portfolio personal construido con Next.js, TypeScript y Tailwind CSS, desplegado en Vercel.",
     tags: ["Next.js", "TypeScript", "Tailwind"],

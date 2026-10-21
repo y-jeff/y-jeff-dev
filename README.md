@@ -12,9 +12,9 @@ Portfolio personal de **Yeinson Reyes**, Full Stack Developer de Mejillones, Chi
 - **Inicio:** nombre, rol y accesos a proyectos y contacto
 - **Sobre mí:** presentación y foto
 - **Proyectos:**
-  - [Mineral Manager](https://github.com/y-jeff/Mineral_Manager): gestión operativa de una faena minera (Django)
-  - [Sede Manuel Prado](https://sedemanuelprado.cl): arriendo de sede y gestión de socios, en producción (Django)
-  - [EmiteBoleta](https://github.com/y-jeff/emiteboleta): comprobantes de servicios en PDF desde el celular (Django)
+  - [Mineral Manager](https://github.com/y-jeff/Mineral_Manager): gestión operativa de una faena minera (Django) · Open Source
+  - [Sede Manuel Prado](https://sedemanuelprado.cl): arriendo de sede y gestión de socios (Django) · En producción, [código demo](https://github.com/y-jeff/clubmanuelprado)
+  - [EmiteBoleta](https://github.com/y-jeff/emiteboleta): comprobantes de servicios en PDF desde el celular (Django) · Open Source
   - [Este portfolio](https://y-jeff-dev.vercel.app) (Next.js + TypeScript)
 - **Stack técnico**
 - **Contacto:** email, LinkedIn y GitHub

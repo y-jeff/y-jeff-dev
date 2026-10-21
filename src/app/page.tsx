@@ -102,7 +102,18 @@ export default function Home() {
                 key={project.title}
                 className="flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-accent"
               >
-                <h3 className="text-lg font-semibold">{project.title}</h3>
+                <div className="flex items-start justify-between gap-3">
+                  <h3 className="text-lg font-semibold">{project.title}</h3>
+                  <span
+                    className={`shrink-0 rounded-full border px-2.5 py-0.5 text-xs font-medium ${
+                      project.status === "En producción"
+                        ? "border-accent text-accent"
+                        : "border-border text-muted"
+                    }`}
+                  >
+                    {project.status}
+                  </span>
+                </div>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
                   {project.description}
                 </p>
