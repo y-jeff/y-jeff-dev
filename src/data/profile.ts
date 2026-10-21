@@ -8,7 +8,7 @@ export const profile = {
   about: [
     "Soy desarrollador Full Stack de Mejillones, Chile. Construyo aplicaciones web completas para resolver problemas de operación reales: desde el modelo de datos hasta la interfaz.",
     "Trabajo principalmente con Python y Django, y desarrollo frontends con Tailwind CSS, React y Next.js.",
-    "He creado un sistema de gestión para faenas mineras y la plataforma de arriendo y socios del Club Deportivo Manuel Prado, que hoy está en producción.",
+    "He creado un sistema de gestión para faenas mineras, una app para emitir boletas de servicios desde el celular y la plataforma de arriendo y socios del Club Deportivo Manuel Prado, que hoy está en producción.",
   ],
   // Coloca tu foto en /public y pon aquí su ruta. Con null se muestran tus iniciales.
   photo: "/foto.jpg" as string | null,
@@ -45,11 +45,19 @@ export const projects: Project[] = [
     ],
   },
   {
+    title: "EmiteBoleta",
+    description:
+      "App web mobile-first para que trabajadores independientes en Chile emitan comprobantes de servicios en PDF desde el celular: numeración correlativa, validación de RUT, historial, dashboard mensual y envío por WhatsApp.",
+    tags: ["Django", "PostgreSQL", "ReportLab", "Tailwind CSS"],
+    links: [{ label: "Repositorio", href: "https://github.com/y-jeff/emiteboleta" }],
+  },
+  {
     title: "Este portfolio",
     description:
       "Portfolio personal construido con Next.js, TypeScript y Tailwind CSS, desplegado en Vercel.",
     tags: ["Next.js", "TypeScript", "Tailwind"],
     links: [
+      { label: "Ver sitio", href: "https://y-jeff-dev.vercel.app" },
       { label: "Repositorio", href: "https://github.com/y-jeff/y-jeff-dev" },
     ],
   },
