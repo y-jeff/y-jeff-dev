@@ -30,8 +30,8 @@ Portfolio personal de **Yeinson Reyes**, Full Stack Developer de Mejillones, Chi
 Requiere Node.js 20 o superior.
 
 ```bash
-git clone https://github.com/y-jeff/portafolio-y-jeff-dev.git
-cd portafolio-y-jeff-dev
+git clone https://github.com/y-jeff/y-jeff-dev.git
+cd y-jeff-dev
 npm install
 npm run dev
 ```

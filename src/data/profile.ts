@@ -50,7 +50,7 @@ export const projects: Project[] = [
       "Portfolio personal construido con Next.js, TypeScript y Tailwind CSS, desplegado en Vercel.",
     tags: ["Next.js", "TypeScript", "Tailwind"],
     links: [
-      { label: "Repositorio", href: "https://github.com/y-jeff/portafolio-y-jeff-dev" },
+      { label: "Repositorio", href: "https://github.com/y-jeff/y-jeff-dev" },
     ],
   },
 ];
