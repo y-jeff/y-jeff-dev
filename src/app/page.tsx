@@ -97,10 +97,12 @@ export default function Home() {
         <section id="proyectos" className="scroll-mt-20 py-16">
           <SectionTitle>Proyectos</SectionTitle>
           <div className="grid gap-6 sm:grid-cols-2">
-            {projects.map((project) => (
+            {projects.map((project, index) => (
               <article
                 key={project.title}
-                className="flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-accent"
+                className={`flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-accent ${
+                  index === projects.length - 1 && projects.length % 2 === 1 ? "sm:col-span-2" : ""
+                }`}
               >
                 <div className="flex items-start justify-between gap-3">
                   <h3 className="text-lg font-semibold">{project.title}</h3>
@@ -114,9 +116,16 @@ export default function Home() {
                     {project.status}
                   </span>
                 </div>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
-                  {project.description}
-                </p>
+                <p className="mt-3 text-sm leading-relaxed">{project.problem}</p>
+                <ul className="mt-4 flex-1 space-y-2 text-sm leading-relaxed text-muted">
+                  {project.highlights.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                {project.note && <p className="mt-3 text-xs italic text-muted">{project.note}</p>}
                 <ul className="mt-4 flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <li key={tag} className="rounded-md bg-background px-2 py-1 font-mono text-xs text-muted">
@@ -124,7 +133,7 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-5 flex gap-4">
+                <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2">
                   {project.links.map((link) => (
                     <a
                       key={link.href}
